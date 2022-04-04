@@ -1,1 +1,258 @@
+:root {
+  --text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --footer-color: #2f303a;
+}
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+  background-color: var(--background-color);
+}
+/* Логотип */
+.logo {
+  color: #000000;
+  width: 145px;
+  height: 31px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo span {
+  color: #2196f3;
+}
+
+/* Навигация сайта */
+.navigation-item {
+  width: 76px;
+  height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+.navigation-item .link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.navigation-item .link:hover,
+.navigation-item .link:focus,
+.contact-item .link:hover,
+.contact-item .link:focus {
+  color: var(--accent-text-color);
+}
+/* Добавил это правило, чтоы подсвечивать вкладки "Студи" и "Навигаця", когда они открыты. Но не работает!!! */
+/* .navigation-accent .link:current {
+  color: var(--accent-text-color);
+} */
+
+/* Контакты в шапке */
+.contact-item {
+  width: 122px;
+  height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+.contact-item .link {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+/* Секция герой */
+.hero {
+  background-color: grey;
+}
+.hero-title {
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.hero-btn {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: aquamarine;
+}
+.hero-btn span {
+  color: #ffffff;
+  width: 136px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+/* Особенности */
+.features {
+  list-style: none;
+}
+.feature-subtitle {
+  list-style: none;
+  width: 270px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.features-text {
+  width: 270px;
+  height: 75px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* Чем мы занимаемся */
+.activity-title {
+  width: 376px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.activity-list {
+  list-style: none;
+}
+/* Наша команда */
+.team-section {
+  background-color: var(--secondary-background-color);
+}
+.team-title {
+  height: 42px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+.team-list {
+  list-style: none;
+}
+.team-subtitle {
+  width: 151px;
+  height: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+.team-list-text {
+  width: 130px;
+  height: 19px;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* Футер */
+.footer-section {
+  background-color: var(--footer-color);
+}
+.adress-list {
+  list-style: none;
+  font-style: normal;
+}
+.adress-link {
+  text-decoration: none;
+  width: 231px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.adress-link span {
+  width: 231px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.adress-link:hover,
+.adress-link:focus,
+.adress-link span:hover,
+.adress-link span:focus {
+  color: var(--accent-text-color);
+}
+
+/* Портфолио */
+
+/* Фильтр проектов */
+.filters-list {
+  list-style: none;
+}
+.filter-btn {
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+}
+.filter-btn span {
+  color: var(--text-color);
+  width: 84px;
+  height: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-text-color);
+  color: #ffffff;
+}
+
+/* Проекти */
+.projects-list {
+  list-style: none;
+  font-style: normal;
+}
+.project-link {
+  text-decoration: none;
+}
+
+.project-subtitle {
+  color: var(--text-color);
+  width: 322px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-text {
+  color: var(--secondary-text-color);
+  width: 322px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
