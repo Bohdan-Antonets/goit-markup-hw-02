@@ -51,9 +51,9 @@ body {
   color: var(--accent-text-color);
 }
 /* Добавил это правило, чтоы подсвечивать вкладки "Студи" и "Навигаця", когда они открыты. Но не работает!!! */
-/* .navigation-accent .link:current {
+a .link .current {
   color: var(--accent-text-color);
-} */
+}
 
 /* Контакты в шапке */
 .contact-item {
